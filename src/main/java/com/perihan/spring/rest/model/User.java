@@ -71,8 +71,6 @@ public class User implements Serializable{
 		this.userAddress = userAddress;
 		this.userPhone = userPhone;
 	}
-	@ManyToOne(cascade=CascadeType.ALL, 
-			fetch = FetchType.LAZY)
 	public Set<Country> getCountry() {
 		return country;
 	}
