@@ -31,7 +31,7 @@ public class UserController {
 	}
  
 	@RequestMapping(value = "/addUser", method = RequestMethod.POST, headers = "Accept=application/json")
-	public void addCountry(@RequestBody User user) { 
+	public void addUser(@RequestBody User user) { 
 		userService.addUser(user);
  
 	}
